@@ -1,27 +1,15 @@
-@custom-media --medium-viewport (min-width: 30em);
-@custom-media --large-viewport (min-width: 60em);
-@custom-media --huge-viewport (min-width: 90em);
-
 :root {
-  font-size: 0.6rem;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: calc(0.5rem + 1vw);
 }
 
-@media (--medium-viewport) {
-  :root {
-    font-size: 0.8rem;
-  }
+h3 {
+  font-size: calc(1em + 0.5vw);
+  margin: 0;
 }
 
-@media (--large-viewport) {
-  :root {
-    font-size: 1rem;
-  }
-}
-
-@media (--huge-viewport) {
-  :root {
-    font-size: 1.2rem;
-  }
+p {
+  margin: 0;
 }
 
 .c-grid {
@@ -34,18 +22,17 @@
   grid-template-columns: 1fr 1fr;
 }
 
-@media (--medium-viewport) {
-  .c-grid--three\@tablet {
+@media (min-width: 45em) {
+  .c-grid--three\@desktop {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (--large-viewport) {
-  .c-grid--four\@desktop {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+.c-grid__item {
+  padding: 1em 1.2em 1.2em;
+  border: 1px solid gray;
 }
 
-.c-grid__item {
-  border: 1px solid gray;
+.c-grid__item > * + * {
+  margin-top: 1.5em;
 }
