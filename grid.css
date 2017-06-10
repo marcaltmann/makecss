@@ -1,0 +1,51 @@
+@custom-media --medium-viewport (min-width: 30em);
+@custom-media --large-viewport (min-width: 60em);
+@custom-media --huge-viewport (min-width: 90em);
+
+:root {
+  font-size: 0.6rem;
+}
+
+@media (--medium-viewport) {
+  :root {
+    font-size: 0.8rem;
+  }
+}
+
+@media (--large-viewport) {
+  :root {
+    font-size: 1rem;
+  }
+}
+
+@media (--huge-viewport) {
+  :root {
+    font-size: 1.2rem;
+  }
+}
+
+.c-grid {
+  display: grid;
+
+  grid-gap: 1em;
+}
+
+.c-grid--two {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (--medium-viewport) {
+  .c-grid--three\@tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (--large-viewport) {
+  .c-grid--four\@desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.c-grid__item {
+  border: 1px solid gray;
+}
