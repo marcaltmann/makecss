@@ -1,0 +1,15 @@
+.simple-grid {
+  display: grid;
+
+  grid-gap: 1em;
+}
+
+.simple-grid--2-3 {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (--medium) {
+  .simple-grid--2-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
