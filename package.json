@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/marcaltmann/makecss#readme",
   "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
     "webpack": "^2.6.1"
   }
 }
