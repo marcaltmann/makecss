@@ -1,0 +1,20 @@
+/*
+Variables:
+
+--limiter-width: 52.5em;
+--limiter-wide-width: 62.5em;
+--limiter-padding: 0.5em;
+
+*/
+
+.limiter {
+  padding-right: var(--limiter-padding, 0.5em);
+  padding-left:  var(--limiter-padding, 0.5em);
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: var(--limiter-width, 52.5em);
+}
+
+.limiter--wide {
+  max-width: var(--limiter-width, 62.5em);
+}
