@@ -1,10 +1,17 @@
-@import "normalize.css";
+/* Variables */
 @import "variables.css";
+
+/* Base */
+@import "normalize.css";
 @import "base.css";
 
 /* Modules */
 @import "modules/limiter.css";
 @import "modules/simple-grid.css";
+@import "modules/media.css";
+
+/* Utilities */
+@import "utilities.css";
 
 
 p {
