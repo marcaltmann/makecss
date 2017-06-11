@@ -9,6 +9,7 @@
 @import "modules/limiter.css";
 @import "modules/simple-grid.css";
 @import "modules/media.css";
+@import "modules/button.css";
 
 /* Utilities */
 @import "utilities.css";
